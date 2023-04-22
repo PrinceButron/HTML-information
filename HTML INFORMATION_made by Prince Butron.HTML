@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>How to Create a Webpage and Understand Basic HTML Codes</title>
+	<style>
+		/* Reset default margin and padding */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		/* Set body background and font family */
+		body {
+			background-image: url('path/to/mountain-image.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-family: Arial, sans-serif;
+			color: #333;
+			line-height: 1.6;
+		}
+
+		/* Set container padding and max-width */
+		.container {
+			padding: 50px;
+			max-width: 800px;
+			margin: 0 auto;
+			background-color: rgba(255, 255, 255, 0.8);
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+		}
+
+		/* Set heading font-size and margin-bottom */
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		h1 {
+			font-size: 48px;
+			color: #333;
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		h2 {
+			font-size: 36px;
+			color: #333;
+			margin-top: 40px;
+		}
+
+		h3 {
+			font-size: 24px;
+			color: #333;
+			margin-top: 30px;
+		}
+
+		h4 {
+			font-size: 18px;
+			color: #333;
+			margin-top: 20px;
+		}
+
+		p {
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+
+		a {
+			color: #007bff;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		code {
+			font-family: Consolas, monospace;
+			color: #c7254e;
+			background-color: #f9f2f4;
+			padding: 2px;
+		}
+
+		ul, ol {
+			margin-left: 20px;
+			margin-bottom: 20px;
+		}
+
+		ul li, ol li {
+			margin-bottom: 10px;
+		}
+
+		img {
+			max-width: 100%;
+			display: block;
+			margin: 20px auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>How to Create a Webpage and Understand Basic HTML Codes</h1>
+	</header>
+	<div class="container">
+		<main>
+			<section>
+				<h2>Introduction</h2>
+				<p>If you're new to web development, creating your own webpage can seem daunting. However, with a basic understanding of HTML (Hypertext Markup Language), you can create a simple webpage in no time!</p>
+			</section>
+
+			<section>
+				<h2>What is HTML?</h2>
+				<p>HTML (Hypertext Markup Language) is a markup language used to define the structure and content of a webpage. It uses various tags and attributes to create elements such as headings, paragraphs, images, links, and more. Web browsers interpret HTML and use it to display webpages to users.</p>
+</section>
+		<section>
+			<h2>Basic HTML Structure</h2>
+			<p>Every HTML document starts with a declaration specifying the version of HTML being used. This is followed by the <code>&lt;html&gt;</code> tag, which contains the entire document.</p>
+			<pre><code>&lt;!DOCTYPE html&gt;
+		<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>Heading 1</h1>
+<p>Paragraph.</p>
+</body>
+</html>
+</code></pre>
+<p>The <code><head></code> element contains meta information about the document, such as the page title and links to CSS stylesheets and JavaScript files. The <code><body></code> element contains the visible content of the webpage, including headings, paragraphs, images, and other elements.</p>
+</section>
+		<section>
+			<h2>Common HTML Tags</h2>
+			<p>HTML offers many tags for creating different types of content on a webpage. Here are some of the most commonly used tags:</p>
+			<ul>
+				<li><code>&lt;h1&gt;...&lt;/h1&gt;</code> - Creates a main heading.</li>
+				<li><code>&lt;p&gt;...&lt;/p&gt;</code> - Creates a paragraph.</li>
+				<li><code>&lt;a href="..."&gt;...&lt;/a&gt;</code> - Creates a hyperlink.</li>
+				<li><code>&lt;img src="..." alt="..."&gt;</code> - Inserts an image.</li>
+				<li><code>&lt;ul&gt;...&lt;/ul&gt;</code> - Creates an unordered list.</li>
+				<li><code>&lt;ol&gt;...&lt;/ol&gt;</code> - Creates an ordered list.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Styling with CSS</h2>
+			<p>While HTML is used to define the structure and content of a webpage, CSS (Cascading Style Sheets) is used to define the presentation of the webpage, such as colors, fonts, and layouts. CSS can be added to an HTML document using the <code>&lt;style&gt;</code> tag, or in an external CSS stylesheet.</p>
+			<pre><code>&lt;!DOCTYPE html&gt;
+<html>
+<head>
+<title>Page Title</title>
+<style>
+body {
+background-color: #f2f2f2;
+}
+h1 {
+color: blue;
+font-size: 36px;
+}
+</style>
+</head>
+<body>
+<h1>Heading 1</h1>
+<p>Paragraph.</p>
+</body>
+</html>
+</code></pre>
+<p>The CSS in this example sets the background color and font size of the body element, as well as the color and font size of the h1 element.</p>
+<p>CSS offers many more properties for styling webpages, including padding, margins, borders, and more. Additionally, CSS can be used to create responsive designs that adjust to different screen sizes and devices.</p>
+</section>
+		<section>
+			<h2>HTML Forms</h2>
+			<p>HTML forms allow users to input and submit data on a webpage, such as filling out a contact form or making a purchase. Forms are created using the <code>&lt;form&gt;</code> tag, and various input types such as text boxes, radio buttons, and checkboxes.</p>
+			<pre><code>&lt;!DOCTYPE html&gt;
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<form action="submit-form.php" method="post">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name"><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email"><br>
+<label for="message">Message:</label>
+<textarea id="message" name="message"></textarea><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+</code></pre>
+<p>This form includes input fields for name, email, and message, as well as a submit button. When the user submits the form, the data is sent to a server-side script for processing.</p>
+</section>
+		<section>
+			<h2>Conclusion</h2>
+			<p>HTML is a fundamental technology for building webpages, providing a way to define their structure and content. By using HTML in conjunction with CSS and JavaScript, developers can create dynamic and interactive webpages that are both visually appealing and functional.</p>
+		</section>
+
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Prince Butron</p>
+	</footer>
+
+</body>
+</html>
+
+
